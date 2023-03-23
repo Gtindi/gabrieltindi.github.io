@@ -40,7 +40,7 @@ app.use('/about', about);
 app.use('/portfolio', myWork);
 app.use('/contact', contact);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
   console.log(`server started on ${port}`);
 })
