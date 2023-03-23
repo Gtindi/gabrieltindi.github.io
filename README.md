@@ -1,4 +1,4 @@
-# Express-porfolio
+# My-porfolio
 
 It's a portfolio with server side rendering, build with VanillaJS, NodeJS, Express, Sass
 
@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repo
 
 ```
-git clone https://github.com/agungTuanany/express-portfolio.git
+git clone https://github.com/Gtindi/gabrieltindi.github.io
 ```
 
 2. Install pakcage.json file
@@ -47,16 +47,3 @@ Enjoy
 * express
 * express-handlebars
 * method-override
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-[Brad
-Traversy](https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU) Portfolio boilerplate
-
-[lukaszadam](https://lukaszadam.com/illustrations) svg images
-
-[Jen Simmons](https://www.youtube.com/watch?v=dQHtT47eH0M) for using Flexbox CSS Grid Together
-
