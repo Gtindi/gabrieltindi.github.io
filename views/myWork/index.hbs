@@ -1,0 +1,26 @@
+<main id='myWork'>
+  <div class='myWork-container'>
+    <h1 class='lg-heading myWork-heading'>My <span class='text-secondary'>Project</span></h1>
+    <div class='bg-myWork'></div>
+    <h2 class='sm-heading myWork__title'>
+		I'm specializing in <b>Fullstack</b> web development. This is sort of my project I've been working on lately.
+    </h2>
+  </div>
+</main>
+
+<section class='myWork-section'>
+  {{#each portfolio}}
+    <article class='myWork-portfolio'>
+      <h1>{{this.title}}</h1>
+      <p>{{truncate this.description 100}}</p>
+      <ul>
+        {{#each this.details}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <img src={{this.img}} alt=''>
+      <a class='btn'  href='/portfolio/details/{{id}}'>See details</a>
+    </article>
+  {{/each}}
+
+</section>

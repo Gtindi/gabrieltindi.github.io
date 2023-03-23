@@ -1,0 +1,28 @@
+{
+  "name": "express-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js & npm run sass",
+    "sass": "node-sass -w public/scss -o public/css --recursive",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "5.3.4",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "engines": {
+    "node": ">=10.x",
+    "npm": "6.x",
+    "yarn": "1.x"
+  }
+}

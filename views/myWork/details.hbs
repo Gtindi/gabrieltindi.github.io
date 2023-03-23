@@ -1,0 +1,23 @@
+<main class='details'>
+  <img class='details-img' src='{{img}}' alt=''>
+  <h1 class='details-title'>{{titlePortfolio}}</h1>
+  <hr>
+  <p class='details-desc'>{{description}}</p>
+  <br>
+  <h2> The technology I use:</h2>
+  <ul class='details-list'>
+  {{#each details}}
+    <li>{{this}}</li>
+  {{/each}}
+  </ul>
+
+  <div class='icon'>
+    <a class='icon-fa' href='{{github}}' target='_blank'>
+      <i class='fab fa-github fa-3x'></i>
+    </a>
+    <a class='icon-fa' href='{{web}}' target='_blan'>
+      <i class='fab fa-edge fa-3x'></i>
+    </a>
+  </div>
+  <a class='btn-details' href='/portfolio'>back</a>
+</main>

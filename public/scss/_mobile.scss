@@ -1,0 +1,258 @@
+// WideScreens
+@include mediaHd {
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+      .myWork-heading {
+        font-size: 16rem;
+      }
+      .myWork__title {
+        font-size: 6.5rem;
+      }
+    }
+  }
+  .myWork-section {
+    .myWork-portfolio {
+      > img {
+        width: 20vh !important;
+        height: 20vh !important;
+      }
+    }
+  }
+}
+@include mediaXL {
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+      .myWork-heading {
+        font-size: 16rem;
+      }
+      .myWork__title {
+        font-size: 4.5rem;
+      }
+    }
+  }
+  .myWork-section {
+    margin-top: 11rem;
+
+    .myWork-portfolio {
+      > img {
+        width: 25vh;
+        height: 25vh;
+      }
+    }
+  }
+
+}
+
+// Desktop & Laptops
+@include mediaLg {
+
+}
+
+// Tablets & small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    tranform: translate3d(-100%, 0, 0);
+    font-size: 1.6rem;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      // will change with random words
+      background: url('../img/profile-pic-sm.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 150px;
+      height: 160px;
+    }
+  }
+
+  /* Home Page */
+  main#home {
+    .home-container {
+      margin-top: 0 !important;
+    }
+
+    .bg-home {
+      &:after {
+        right: 4rem !important;
+        width: 80vh !important;
+      }
+    }
+  }
+
+  /* About Page */
+  main#about {
+    .bg-about {
+      &:after {
+        width: 65vh !important;
+        height: 50vh !important;
+        top: 18rem !important;
+      }
+    }
+
+    .about-container {
+      .about__title {
+        width: unset;
+      }
+      .about__p {
+        width: unset;
+      }
+    }
+  }
+
+  /* My Project Page */
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+    }
+    .myWork__title {
+      width: unset !important;
+    }
+    .bg-myWork {
+      &:after {
+        top: 13rem !important;
+        right: 0 !important;
+        width: 75vh !important;
+        height: 73vh !important;;
+      }
+    }
+  }
+
+  /* Details Page */
+  .details {
+    .details-img {
+      width: 75vh !important;
+    }
+    > hr {
+      margin: 0 8rem !important;
+    }
+
+    .details-list {
+      text-align: left;
+    }
+  }
+
+
+}
+
+// SmartPhones
+@include mediaSm {
+
+  // Menu Nav
+  .menu-nav {
+    .nav-item {
+      line-height: 3.5rem;
+
+      .nav-link {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  // Home Page
+  main#home {
+    .bg-home {
+      &:after {
+        top: 15rem !important;
+        right: 1.5rem !important;
+        width: 55vh !important;
+      }
+    }
+
+    .home-container {
+      .home__heading {
+        font-size: 6rem !important;
+      }
+      .home__title {
+        font-weight: 450 !important;
+      }
+    }
+  }
+
+  // About Page
+  main#about {
+    .bg-about {
+      &:after {
+        top: 40rem !important;
+        width: 55vh !important;
+      }
+    }
+    .about-container {
+      hr {
+        width: 100% !important;
+      }
+      .about-heading {
+        font-size: 6rem !important;
+      }
+      .about__title {
+        width: 52vh !important;
+      }
+    }
+  }
+
+  main#myWork {
+    .myWork-container {
+      .myWork-heading {
+        font-size: 6rem !important;
+      }
+      .myWork__title {
+        text-align: left;
+        width: 50vh !important;
+      }
+      .bg-myWork {
+        &:after {
+          top: 25rem !important;
+          right: 0 !important;
+          width: 55vh !important;
+          height: 59vh !important;
+        }
+      }
+    }
+  }
+
+  /* Details Page */
+
+  .details {
+    .details-img {
+      width: 42vh !important;
+    }
+    > hr {
+      margin: 0 6rem !important;
+    }
+    .details-desc {
+      font-size: 1.3rem !important;
+    }
+    .details-list {
+      font-size: 1rem !important;
+      text-align: left;
+    }
+  }
+
+}

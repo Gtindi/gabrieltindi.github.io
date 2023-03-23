@@ -1,0 +1,128 @@
+// COLOR ITEM
+$background-opacity: 0.9;
+
+//images
+$show-image: true;
+$home-image: url(../img/Asset-10.svg);
+$about-image: url(../img/Asset-60.svg);
+$myWork-image: url(../img/undraw-black.png);
+
+html {
+  --bg: #FCFCFC;
+  --bg-panel:#EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: #3694FF;
+  --color-text: #B5B5B5;
+}
+
+@mixin easeOut {
+  transition: all .5s ease-out;
+}
+
+@mixin background {
+  @if $show-image {
+    &.bg-home {
+      width: 100%;
+      height: 100%;
+
+      // sudo element
+      // when you use :after should have " content:' ' "
+      &:after {
+        content: '';
+        position: absolute;
+        top: 14rem;
+        right:0;
+        width: 100vh;
+        height: 50vh;
+        background: $home-image;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@mixin background-about {
+  @if $show-image {
+    &.bg-about {
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: $about-image;
+        background-repeat: no-repeat;
+        width: 100vh;
+        height: 60vh;
+        top: 11rem;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@mixin background-myWork {
+  @if $show-image {
+    &.bg-myWork {
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: $myWork-image;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vh;
+        height: 100vh;
+        top: 15vh;
+        right: -3rem;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.trasition *:after {
+  transition: all .75s !important;
+  transition-delay: 0 !important;
+}
+
+
+// Media Query Mixin
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+@mixin mediaHd {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

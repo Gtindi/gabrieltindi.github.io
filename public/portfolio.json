@@ -1,0 +1,106 @@
+{
+  "portfolio": [
+    {
+      "sys": {"id": "1"},
+      "fields": {
+        "title": "StoryBooks",
+        "description": "StoryBooks is a CRUD apps for writing a list of story or blog-post, you can create your own story in 'public' or 'private', if you choose your story in private, your private story wouldn't show up in Public Stories",
+        "details": [ "HTML5","SASS", "Materialize 1.0.x", "VanillaJS", "NodeJS", "mongoDB | using mongoDB Atlas", "Express"],
+        "github": "https://github.com/agungTuanany/storybooks",
+        "web": "https://dev-storybooks.herokuapp.com"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/storybooks.gif"
+          }
+        }
+      }
+    },
+    {
+      "sys": {"id": "2"},
+      "fields": {
+        "title": "Vidjot",
+        "description": "Vidjot is a CRUD application with login functionality and server-side form validation",
+        "details": [ "HTML5","SASS", "Bootstrap 4", "VanillaJS", "NodeJS", "mongoDB | using mlab", "Express"],
+        "github": "https://github.com/agungTuanany/vidjot",
+        "web": "https://vidjot-prodx.herokuapp.com"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/vidjot-1.gif"
+          }
+        }
+      }
+    },
+    {
+      "sys": {"id": "3"},
+      "fields": {
+        "title": "Shopping cart",
+        "description": "A mini e-commerce web, that show how to take an order in a basket. I'm using local-storage DOM for keep the order on the basket with a list of product taken from JSON.",
+        "details": [ "HTML5", "CSS3", "VanillaJS"],
+        "github": "https://github.com/agungTuanany/ShoppingCart",
+        "web": "https://agungTuanany.github.io/ShoppingCart"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/shopping-cart.gif"
+          }
+        }
+      }
+    },
+    {
+      "sys": {"id": "4"},
+      "fields": {
+        "title": "Dapur Mama Imma",
+        "description": " A e-commerce web using local-storage DOM to count the take-away cakes, I use JSON for cake database.",
+        "details": [ "HTML5", "CSS3", "VanillaJS"],
+        "github": "https://github.com/agungTuanany/Grandma-sweets",
+        "web": "https://agungTuanany.github.io/Grandma-sweets"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/grandma-sweet.gif"
+          }
+        }
+      }
+    },
+    {
+      "sys": {"id": "5"},
+      "fields": {
+        "title": "Car Dealer",
+        "description": "A e-commerce web. with lazy-loading when you hit first the web.",
+        "details": [ "HTML5", "CSS3", "VanillaJS"],
+        "github": "https://github.com/agungTuanany/car-dealer",
+        "web": "https://agungTuanany.github.io/car-dealer"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/car-dealer.gif"
+          }
+        }
+      }
+    },
+    {
+      "sys": {"id": "6"},
+      "fields": {
+        "title": "Responsive Restaurant",
+        "description": "A restaurant web with responsive menu of the day when you hover.",
+        "details": [ "HTML5", "CSS3", "VanillaJS", "JQuery","Bootstrap"],
+        "github": "https://github.com/agungTuanany/Responsive-Restaurant",
+        "web": "https://agungTuanany.github.io/Responsive-Restaurant"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/responsive-restaurant.gif"
+          }
+        }
+      }
+    }
+  ]
+}
