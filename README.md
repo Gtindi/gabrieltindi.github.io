@@ -1,7 +1,7 @@
 # My-porfolio
 
 It's a portfolio with server side rendering, build with VanillaJS, NodeJS, Express, Sass <br/>
-<i href = "https://gabrieltindi.buzz/">Click here to view</i>
+<a href = "https://gabrieltindi.buzz/">Click here to view</a>
 
 ## Getting Started
 
